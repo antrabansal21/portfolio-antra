@@ -1,0 +1,70 @@
+:root {
+  --purple: #4e54c8;
+  --blue:   #56CCF2;
+  --light:  #f4f7fb;
+  --white:  #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.estimator-page {
+  background-color: var(--light);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.estimator-page h2 {
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.step-indicator {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--blue);
+  background-color: #f4f7fb;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0px 8px 24px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 16px 36px rgba(0,0,0,0.15);
+}
+
+/* Navigation Buttons */
+button {
+  border-radius: 30px;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: var(--blue);
+  border: none;
+  color: var(--white);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .estimator-page h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

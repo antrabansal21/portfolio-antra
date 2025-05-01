@@ -1,0 +1,102 @@
+.estimator-container {
+    max-width: 800px;
+  }
+  
+  .step-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .step-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .step-circle.active {
+    background: #4e54c8;
+    color: white;
+  }
+  h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card.active {
+    border-color: #007bff;
+    background-color: #e6f7ff;
+  }
+  
+  .service-card .form-check-label {
+    font-size: 1.1rem;
+  }
+  
+  .service-card .form-check-input {
+    margin-right: 10px;
+  }
+  .estimator-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step-indicator .step-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.step-indicator .step-circle.active {
+    background-color: #007bff;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.feature-card.active,
+.integration-card.active,
+.design-card.active,
+.service-card.active {
+    background-color: #f0f8ff;
+}
+
+.card-body label {
+    font-weight: 600;
+}
+.selection-preview-container {
+    background: #fdfdfe;
+    border-left: 5px solid #0d6efd;
+    transition: all 0.3s ease-in-out;
+}
+
+.selection-preview-container:hover {
+    background-color: #f8f9ff;
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.2);
+}

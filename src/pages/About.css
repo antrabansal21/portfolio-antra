@@ -1,0 +1,215 @@
+/* About Page Global */
+:root {
+    --purple: #4e54c8;
+    --blue:   #56CCf2;
+    --light:  #f4f7fb;
+    --white:  #ffffff;
+    --gray:   #6c757d;
+  }
+  
+  .about-page {
+    background-color: var(--light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--gray);
+  }
+  
+  /* Section Headings */
+  .about-page h2,
+  .about-page h3 {
+    color: var(--purple);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .about-page h2::after,
+  .about-page h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--blue);
+    margin: 0.5rem auto 1.5rem;
+    border-radius: 2px;
+  }
+  
+  /* Bio & Journey Cards */
+  .bio-card, .journey-card {
+    border: none;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .bio-card:hover, .journey-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+  .bio-card .icon, .journey-card .icon {
+    color: var(--purple);
+    font-size: 1.5rem;
+  }
+  
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 3px solid #4e54c8;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+.timeline-year {
+  position: absolute;
+  left: -90px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4e54c8;
+  color: white;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 3px solid #4e54c8;
+  color: #4e54c8;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .timeline-container {
+    padding-left: 20px;
+    border-left: 2px solid #4e54c8;
+  }
+  
+  .timeline-year {
+    left: -70px;
+    font-size: 0.8rem;
+  }
+
+  .timeline-icon {
+    left: -25px;
+    font-size: 1rem;
+  }
+  
+  .timeline-content {
+    font-size: 0.9rem;
+  }
+}
+
+  
+  /* Skills Grid */
+  .skill-card {
+    background: var(--white);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  }
+  .skill-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--blue);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+  .skill-icon {
+    font-size: 2.5rem;
+    color: var(--purple);
+  }
+  
+  /* Education Cards */
+  .education-card {
+    border-left: 6px solid var(--blue);
+    background: var(--white);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+  
+  /* Achievements List */
+  .achievement-item {
+    background: #e9f5ff;
+    border: none;
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+  }
+  .achievement-item:hover {
+    background: #d0eaff;
+  }
+  .achievement-item .text-warning {
+    color: #ffc107;
+  }
+  
+  /* Blog Cards */
+  .blog-card {
+    background: var(--white);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+  .blog-card .icon {
+    color: var(--purple);
+  }
+  
+  /* Download CV Button */
+  .about-page .btn-outline-primary {
+    color: var(--purple);
+    border-color: var(--purple);
+    transition: background 0.3s, color 0.3s;
+  }
+  .about-page .btn-outline-primary:hover {
+    background: var(--purple);
+    color: var(--white);
+  }
+  
+  /* Contact CTA */
+  .contact-section .btn-primary {
+    background: var(--purple);
+    border: none;
+    transition: background 0.3s;
+  }
+  .contact-section .btn-primary:hover {
+    background: var(--blue);
+  }
+  .social-links a {
+    color: var(--purple);
+    margin: 0 0.75rem;
+    transition: color 0.3s;
+  }
+  .social-links a:hover {
+    color: var(--blue);
+  }
+  

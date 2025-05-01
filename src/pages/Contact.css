@@ -1,0 +1,70 @@
+:root {
+    --purple: #4e54c8;
+    --blue:   #56CCF2;
+    --white:  #ffffff;
+    --light:  #f4f7fb;
+  }
+  
+  .contact-page {
+    background: var(--light);
+  }
+  
+  .contact-page h2 {
+    color: var(--purple);
+    font-weight: bold;
+  }
+  
+  .contact-form-card, .contact-info-card, .map-card {
+    border-radius: 15px;
+    background: var(--white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .contact-form-card:hover,
+  .contact-info-card:hover,
+  .map-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 16px 32px rgba(0,0,0,0.1);
+  }
+  
+  /* Form Inputs */
+  .contact-form-card input,
+  .contact-form-card textarea {
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+  }
+  
+  /* Button Styling */
+  .contact-form-card button,
+  .contact-info-card .btn,
+  .calendar-box .btn {
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  
+  /* Social Links */
+  .social-links a {
+    color: var(--purple);
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  .social-links a:hover {
+    color: var(--blue);
+  }
+  
+  /* Calendar Box */
+  .calendar-box {
+    margin-top: 30px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  /* Map Card */
+  .map-card iframe {
+    border-radius: 15px;
+  }
+  

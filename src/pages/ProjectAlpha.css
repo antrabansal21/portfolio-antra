@@ -1,0 +1,82 @@
+.project-hero-slider {
+  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.05); /* subtle bottom shadow */
+}
+
+.project-hero-slider .hero-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.project-hero-slider img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.85);
+  transition: transform 1s ease;
+}
+
+.project-hero-slider .carousel-item-active img {
+  transform: scale(1.02); /* optional zoom-in effect */
+}
+
+.project-hero-slider .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  color: #333;
+  max-width: 90%;
+  text-align: center;
+}
+
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+  }
+  
+  .feature-box {
+    border-left: 6px solid #4e54c8;
+  }
+  
+  .cta-glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    max-width: 600px;
+  }
+  .project-overview-section {
+    background-color: #f8f9fc;
+  }
+  
+  .overview-text-box p {
+    font-size: 1.05rem;
+    color: #444;
+  }
+  
+  .icon-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .icon-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: none;
+  }
+  

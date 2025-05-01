@@ -1,0 +1,89 @@
+:root {
+    --purple: #4e54c8;
+    --blue:   #56CCF2;
+    --light:  #f4f7fb;
+    --white:  #ffffff;
+  }
+  
+  .services-hero {
+    background: linear-gradient(135deg, #1c1c64, #4e54c8);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 0;
+  }
+  .services-hero h1 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 3rem;
+  }
+  .services-hero p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .services-hero p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  
+  /* Services Categories */
+  .services-categories h2 {
+    color: var(--purple);
+    font-weight: bold;
+  }
+  .service-category-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 16px 36px rgba(0,0,0,0.12);
+  }
+  .service-category-icon {
+    color: var(--purple);
+  }
+  .service-category-card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* FAQs */
+  .services-faqs h2 {
+    color: var(--purple);
+    font-weight: bold;
+  }
+  .accordion-button:not(.collapsed) {
+    color: var(--white);
+    background-color: var(--purple);
+  }
+  
+  /* Final CTA */
+  .services-final-cta {
+    background: #f8f9fa;
+  }
+  .services-final-cta h2 {
+    color: var(--purple);
+    font-weight: bold;
+  }
+
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .services-hero {
+    background: linear-gradient(-45deg, #1c1c64, #4e54c8, #8f94fb);
+    background-size: 600% 600%;
+    animation: gradientMove 12s ease infinite;
+    color: var(--white);
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  
