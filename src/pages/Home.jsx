@@ -102,7 +102,7 @@ class Home extends Component {
                             <Col lg={6}>
                                 <motion.div {...scrollAnim} transition={{ ...scrollAnim.transition, delay: 0.4 }}>
                                     <img
-                                        src="\public\aboutus.jpg"
+                                        src="aboutus.jpg"
                                         alt="About Antra's WebSolution"
                                         className="img-fluid about-img shadow"
                                     />

@@ -20,7 +20,7 @@ import BetaApp from './pages/BetaApp';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio-antra">
       <FixedButtons />
         <NavigationBar />
         <Routes>
