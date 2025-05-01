@@ -27,7 +27,7 @@ class ProjectAlpha extends Component {
         {/* Hero Slider */}
         <section className="project-hero-slider">
           <Carousel fade controls={false} indicators={false} interval={3000}>
-            {['/projectalpha1.png', '/projectalpha2.png', '/projectalpha3.png', '/projectalpha4.png'].map((img, i) => (
+            {['projectalpha1.png', 'projectalpha2.png', 'projectalpha3.png', 'projectalpha4.png'].map((img, i) => (
               <Carousel.Item key={i}>
                 <div className="hero-img-wrapper">
                   <img src={img} alt={`Slide ${i + 1}`} className="w-100" />

@@ -28,13 +28,13 @@ class BetaApp extends Component {
         <section className="project-hero-slider">
           <Carousel fade controls={false} indicators={false} interval={3000}>
             {[
-              '/betaapp1.png',
-              '/betaapp2.png',
-              '/betaapp3.png',
-              '/betaapp4.png',
-              '/betaapp5.png',
-              '/betaapp6.png',
-              '/betaapp7.png',
+              'betaapp1.png',
+              'betaapp2.png',
+              'betaapp3.png',
+              'betaapp4.png',
+              'betaapp5.png',
+              'betaapp6.png',
+              'betaapp7.png',
             ].map((img, i) => (
               <Carousel.Item key={i}>
                 <div className="hero-img-wrapper">

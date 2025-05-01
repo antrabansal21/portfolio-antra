@@ -58,9 +58,9 @@ class NavigationBar extends Component {
               <Nav.Link as={Link} to="/about" onClick={this.closeMenu} className="mx-2 d-flex align-items-center fw-semibold text-light">
                 <FaUser className="me-1" /> About
               </Nav.Link>
-              <Nav.Link as={Link} to="/projects" onClick={this.closeMenu} className="mx-2 d-flex align-items-center fw-semibold text-light">
+              {/* <Nav.Link as={Link} to="/projects" onClick={this.closeMenu} className="mx-2 d-flex align-items-center fw-semibold text-light">
                 <FaProjectDiagram className="me-1" /> Projects
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link as={Link} to="/services" onClick={this.closeMenu} className="mx-2 d-flex align-items-center fw-semibold text-light">
                 <FaServicestack className="me-1" /> Services
               </Nav.Link>
