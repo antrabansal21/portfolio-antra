@@ -5,6 +5,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import aboutImage from '../assets/aboutus.jpg';
+import betaapp from '../assets/betaapp.png';
+import projectalpha1 from '../assets/projectalpha1.png';
+
 
 class Home extends Component {
     render() {
@@ -124,14 +127,14 @@ class Home extends Component {
                             {[
                                 {
                                     title: 'Dual Distributor Web Portal',
-                                    img: 'projectalpha1.png',
+                                    img: {projectalpha1},
                                     desc: 'A responsive distributor website built for a shopkeeper.',
                                     tech: ['React', 'Bootstrap', 'WhatsApp API'],
                                     link: '/projects/alpha'
                                 },
                                 {
                                     title: 'RetailFlow ERP System',
-                                    img: 'betaapp.png',
+                                    img: {betaapp},
                                     desc: 'A powerful software to manage shopkeeper operations.',
                                     tech: ['React Native', 'Node js', 'MySql'],
                                     link: '/beta-app'
