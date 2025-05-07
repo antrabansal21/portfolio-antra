@@ -4,6 +4,7 @@ import { FaLaptopCode, FaRocket, FaLightbulb, FaArrowRight, FaGlobe, FaMobileAlt
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import aboutImage from '../assets/aboutus.jpg';
 
 class Home extends Component {
     render() {
@@ -102,7 +103,7 @@ class Home extends Component {
                             <Col lg={6}>
                                 <motion.div {...scrollAnim} transition={{ ...scrollAnim.transition, delay: 0.4 }}>
                                     <img
-                                        src="aboutus.jpg"
+                                       src={aboutImage}
                                         alt="About Antra's WebSolution"
                                         className="img-fluid about-img shadow"
                                     />
