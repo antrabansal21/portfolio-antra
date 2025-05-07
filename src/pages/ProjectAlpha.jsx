@@ -4,10 +4,10 @@ import { Container, Row, Col, Button, Badge, Carousel, Card } from 'react-bootst
 import { FaCheckCircle, FaLink, FaLaptopCode, FaMobileAlt, FaPaintBrush } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './ProjectAlpha.css';
-import projectalpha1 from './assets/projectalpha1.png';
-import projectalpha2 from './assets/projectalpha2.png';
-import projectalpha3 from './assets/projectalpha3.png';
-import projectalpha4 from './assets/projectalpha4.png';
+import projectalpha1 from '../assets/projectalpha1.png';
+import projectalpha2 from '../assets/projectalpha2.png';
+import projectalpha3 from '../assets/projectalpha3.png';
+import projectalpha4 from '../assets/projectalpha4.png';
 
 const images = [projectalpha1, projectalpha2, projectalpha3, projectalpha4];
 
