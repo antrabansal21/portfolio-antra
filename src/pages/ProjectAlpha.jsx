@@ -33,15 +33,17 @@ class ProjectAlpha extends Component {
       <motion.div {...fadeIn}>
         {/* Hero Slider */}
         <section className="project-hero-slider">
-          {images.map((img, i) => (
-            <Carousel.Item key={i}>
-              <div className="hero-img-wrapper">
-                <img src={img} alt={`Slide ${i + 1}`} className="w-100" />
-              </div>
-            </Carousel.Item>
-          ))}
-
+          <Carousel fade controls={false} indicators={false} interval={3000}>
+            {images.map((img, i) => (
+              <Carousel.Item key={i}>
+                <div className="hero-img-wrapper">
+                  <img src={img} alt={`Slide ${i + 1}`} className="w-100" />
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </section>
+
 
         {/* Overview */}
         <section className="py-5 project-overview-section">
