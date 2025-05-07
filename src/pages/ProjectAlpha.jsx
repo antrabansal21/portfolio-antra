@@ -4,6 +4,13 @@ import { Container, Row, Col, Button, Badge, Carousel, Card } from 'react-bootst
 import { FaCheckCircle, FaLink, FaLaptopCode, FaMobileAlt, FaPaintBrush } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './ProjectAlpha.css';
+import projectalpha1 from './assets/projectalpha1.png';
+import projectalpha2 from './assets/projectalpha2.png';
+import projectalpha3 from './assets/projectalpha3.png';
+import projectalpha4 from './assets/projectalpha4.png';
+
+const images = [projectalpha1, projectalpha2, projectalpha3, projectalpha4];
+
 
 class ProjectAlpha extends Component {
   render() {
@@ -26,60 +33,59 @@ class ProjectAlpha extends Component {
       <motion.div {...fadeIn}>
         {/* Hero Slider */}
         <section className="project-hero-slider">
-          <Carousel fade controls={false} indicators={false} interval={3000}>
-            {['projectalpha1.png', 'projectalpha2.png', 'projectalpha3.png', 'projectalpha4.png'].map((img, i) => (
-              <Carousel.Item key={i}>
-                <div className="hero-img-wrapper">
-                  <img src={img} alt={`Slide ${i + 1}`} className="w-100" />
-                </div>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+          {images.map((img, i) => (
+            <Carousel.Item key={i}>
+              <div className="hero-img-wrapper">
+                <img src={img} alt={`Slide ${i + 1}`} className="w-100" />
+              </div>
+            </Carousel.Item>
+          ))}
+
         </section>
 
         {/* Overview */}
         <section className="py-5 project-overview-section">
-  <Container>
-    <h2 className="text-center mb-5 fw-bold">Project Overview</h2>
-    <Row className="gx-5 gy-4 align-items-center">
-      <Col lg={6}>
-        <div className="overview-text-box">
-          <p className="mb-3">
-            This project was built for a local distributor handling two major brands. 
-            The website allows seamless visibility into both brands with mobile-first responsiveness and direct inquiry buttons for customer outreach.
-          </p>
-          <h6 className="mb-2">Technologies Used:</h6>
-          <div className="mb-4">
-            <Badge bg="primary" className="me-2">React</Badge>
-            <Badge bg="secondary" className="me-2">Bootstrap</Badge>
-            <Badge bg="success">WhatsApp API</Badge>
-          </div>
-        </div>
-      </Col>
+          <Container>
+            <h2 className="text-center mb-5 fw-bold">Project Overview</h2>
+            <Row className="gx-5 gy-4 align-items-center">
+              <Col lg={6}>
+                <div className="overview-text-box">
+                  <p className="mb-3">
+                    This project was built for a local distributor handling two major brands.
+                    The website allows seamless visibility into both brands with mobile-first responsiveness and direct inquiry buttons for customer outreach.
+                  </p>
+                  <h6 className="mb-2">Technologies Used:</h6>
+                  <div className="mb-4">
+                    <Badge bg="primary" className="me-2">React</Badge>
+                    <Badge bg="secondary" className="me-2">Bootstrap</Badge>
+                    <Badge bg="success">WhatsApp API</Badge>
+                  </div>
+                </div>
+              </Col>
 
-      <Col lg={6}>
-        <Card className="p-4 shadow glass-card h-100 text-center">
-          <Row className="g-3">
-            <Col xs={6}>
-              <div className="icon-box">
-                <FaLaptopCode className="fs-2 text-primary mb-2" />
-                <h6 className="fw-bold mb-1">Client</h6>
-                <p className="text-muted small">Shopkeeper / Distributor</p>
-              </div>
-            </Col>
-            <Col xs={6}>
-              <div className="icon-box">
-                <FaMobileAlt className="fs-2 text-success mb-2" />
-                <h6 className="fw-bold mb-1">Platform</h6>
-                <p className="text-muted small">Responsive Web App</p>
-              </div>
-            </Col>
-          </Row>
-        </Card>
-      </Col>
-    </Row>
-  </Container>
-</section>
+              <Col lg={6}>
+                <Card className="p-4 shadow glass-card h-100 text-center">
+                  <Row className="g-3">
+                    <Col xs={6}>
+                      <div className="icon-box">
+                        <FaLaptopCode className="fs-2 text-primary mb-2" />
+                        <h6 className="fw-bold mb-1">Client</h6>
+                        <p className="text-muted small">Shopkeeper / Distributor</p>
+                      </div>
+                    </Col>
+                    <Col xs={6}>
+                      <div className="icon-box">
+                        <FaMobileAlt className="fs-2 text-success mb-2" />
+                        <h6 className="fw-bold mb-1">Platform</h6>
+                        <p className="text-muted small">Responsive Web App</p>
+                      </div>
+                    </Col>
+                  </Row>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
 
         {/* Features */}
