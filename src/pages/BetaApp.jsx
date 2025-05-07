@@ -4,6 +4,17 @@ import { Container, Row, Col, Button, Badge, Carousel, Card } from 'react-bootst
 import { FaCheckCircle, FaLink, FaMobileAlt, FaStore, FaDatabase } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './ProjectAlpha.css';
+import betaapp1 from '../assets/betaapp1.png';
+import betaapp2 from '../assets/betaapp2.png';
+import betaapp3 from '../assets/betaapp3.png';
+import betaapp4 from '../assets/betaapp4.png';
+import betaapp5 from '../assets/betaapp5.png';
+import betaapp6 from '../assets/betaapp6.png';
+import betaapp7 from '../assets/betaapp7.png';
+
+
+const images = [betaapp1, betaapp2, betaapp3, betaapp4, betaapp5, betaapp6, betaapp7];
+
 
 class BetaApp extends Component {
   render() {
@@ -27,15 +38,7 @@ class BetaApp extends Component {
         {/* Hero Carousel */}
         <section className="project-hero-slider">
           <Carousel fade controls={false} indicators={false} interval={3000}>
-            {[
-              'betaapp1.png',
-              'betaapp2.png',
-              'betaapp3.png',
-              'betaapp4.png',
-              'betaapp5.png',
-              'betaapp6.png',
-              'betaapp7.png',
-            ].map((img, i) => (
+            {images.map((img, i) => (
               <Carousel.Item key={i}>
                 <div className="hero-img-wrapper">
                   <img src={img} alt={`Slide ${i + 1}`} className="w-100" />
@@ -44,6 +47,7 @@ class BetaApp extends Component {
             ))}
           </Carousel>
         </section>
+
 
         {/* Overview */}
         <section className="py-5 project-overview-section">
