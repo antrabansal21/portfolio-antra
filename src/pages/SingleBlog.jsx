@@ -30,20 +30,17 @@ const SingleBlog = () => {
             <img src={post.coverImage} alt="cover" className="img-fluid rounded shadow-sm" />
           </div>
         )}
-
         {/* Title & Meta */}
         <h1 className="blog-title mb-3">{post.title}</h1>
         <p className="blog-meta text-muted">
           <strong>By {post.author}</strong> • {new Date(post.date).toLocaleDateString()} • {readTime} min read
         </p>
-
         {/* Tags */}
         <div className="mb-4">
           {post.tags.map((tag, i) => (
             <Badge key={i} className="blog-tag me-2">{tag}</Badge>
           ))}
         </div>
-
         {/* Markdown Content */}
         <ReactMarkdown
           components={{
@@ -59,9 +56,8 @@ const SingleBlog = () => {
         >
           {post.content}
         </ReactMarkdown>
-
         {/* Back Link */}
-        <Link to="/blogs" className="btn btn-outline-primary mt-5">
+        <Link to="/about" className="btn btn-outline-primary mt-5">
           ← Back to Blogs
         </Link>
       </motion.div>
