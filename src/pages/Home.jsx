@@ -46,7 +46,7 @@ class Home extends Component {
                                     animate={{ opacity: 1 }}
                                     transition={{ duration: 1.5, delay: 0.5 }}
                                 >
-                                    <Button href="/contact" variant="primary" className="cta-btn">
+                                    <Button Link as={Link} to="/contact" variant="primary" className="cta-btn">
                                         Let's Build Something Great
                                     </Button>
                                     <Button href="/project-estimator" variant="outline-secondary" className="ms-3 cta-btn">
